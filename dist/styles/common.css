@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+body {
+    /*background-color: yellow;*/
+    height: 100%; /*!/позволит растянуть сайт на 100% высоты*/
+    line-height: normal;
+    color: #052C65;
+    font-family: Roboto, sans-serif;
+    font-size: 14px; !important;
+    font-style: normal;
+    font-weight: 400;
+}
+
+html, .left-side, .main {
+    height: 100%; /*!/позволит растянуть сайт на 100% высоты*/
+}
+
+
+.left {
+    border-right: 1px solid #D9D9D9;
+
+}
+.left, .fixed-bottom{
+    width: 218px !important;
+}
+.logo-block{
+    border-bottom:  1px solid #D9D9D9;
+}
+img{
+    width: 98px;
+}
+.menu ul{
+   /*!**! width: 185px;*/
+}
+.nav-item {
+    min-width: 179px;
+    height: 40px;
+}
+.dropdown-item{
+    height: 40px;
+}
+
+.chart{
+    width: 450px;
+    height: 450px;
+}
+
+
+.dropdown-toggle::after {
+    border-top: 0;
+}
+.dropdown-menu{
+    font-size: 14px;
+}
+.nav-item:hover svg path{
+    fill: white;
+}
+
+.nav-link.active .main-link-text{
+    color: white;
+}
+.nav-link.active svg path{
+    fill: white;
+    background-color: #b02a37;
+}
+.nav-link.active. category {
+    background-color: #b02a37;
+}
+.bt-date.active. bt-date {
+    background-color: #b02a37;
+}
+.page-title{
+    color: #052C65;
+    /*font-family: Roboto, sans-serif;*/
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    min-height: 38px;
+}
+.bt-date{
+    width: 100px;
+}
+.tbl-line, .operationButton{
+    height: 50px;
+}
+
+.form-control, .padding-menu, .input-group{
+    width: 398px;
+}
+.form-control{/*//.button{*/
+    height: 38px;
+}
+.button-border{
+    border: 1px solid #6C757D;
+    width: 100px;
+}
+.card-title{
+    color: #290661;
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+}
+.card, column, .columnEI{
+    width: 352px;
+    height: 138px;
+    border-radius: 12px;
+    /*  // gap: 20px;*/
+}
+.card-body{
+    padding: 20px;
+}
+.card-body.h1{
+    margin-bottom: 0;
+}
+.column{
+    /*//width: 352px;*/
+    margin: 10px;
+}
+
+.form-control {
+    color: #6C757D;
+!important;
+    font-size: 15px;
+    opacity: 1;
+}
+
+.form-control::placeholder {
+    opacity: 1;
+}
+
+a {
+    color: #6C757D;
+}
+
+@font-face {
+    src: url("/fonts/Roboto-Regular.ttf");
+    font-family: "Roboto";
+}
+
+@font-face {
+    src: url("/fonts/Roboto-Medium.ttf");
+    font-family: "Roboto Bold";
+
+}
+
+.registration-title {
+    font-size: 40px;
+    font-family: "Roboto Bold", sans-serif;
+
+}
+
+
+
+
+a.button { /*кнопка переделана в ссылку, а ссылка строчный элемент и стала занимать больше места, поэтому:*/
+    display: inline-block;
+}
+
+.form-check-input {
+    width: 13px;
+    height: 13px;
+}
+
+.f-bold {
+    font-family: "Roboto Bold", sans-serif;
+}
+
+.color-dark-blue {
+    color: #052C65;
+}
+
+.color-blue {
+    color: #0D6EFD;
+}
+
+.color-light-gray {
+    color: #D9D9D9;
+}
+
+.color-gray {
+    color: #6C757D;
+}
+
+.color-gray {
+    color: #CED4DA;
+}
+
+.left{
+    display: none;
+}
+.burger {
+    /*display: none;*/
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+@media screen and (max-width: 1054px) {
+    .exp-inc-options {
+        display: flex;
+        /*justify-content: space-between;*/
+    }
+    .chartBlock{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-content: start;
+    }
+    .chart{
+        width: 350px;
+        height: 350px;
+    }
+    .myButtonBlock{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-content: start;
+    }
+}
+@media screen and (max-width: 767px) {
+    body{
+        font-size: 12px; !important;
+    }
+    .exp-inc-options {
+        display: flex;
+    }
+    .table-responsive{
+        width: 100% !important;
+    }
+    .charts{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .borderChart{
+        border: 0;}
+    .chart{
+        width: 250px;
+        height: 250px;
+    }
+
+    .borderChart{
+        display: none}
+}
+@media screen and (max-width: 400px) {
+    .my-table{
+        max-width: 280px;
+        overflow-x: auto;
+    }
+
+    .card, column, .columnEI {
+        width: 280px;
+    }
+
+    .page-title{
+        display: flex;
+    }
+    .exp-inc-options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button-block{
+        width: 280px;
+    }
+
+    .card-title{
+        font-size: 24px;
+    }
+    .form-control, .padding-menu, .input-group{
+        max-width: 280px;
+        width: 100%;
+        color: #b02a37;
+    }
+}
+

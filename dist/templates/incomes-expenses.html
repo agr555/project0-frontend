@@ -1,0 +1,90 @@
+<div>
+    <div class="right py-5 px-lg-5"><!--"right p-5">-->
+        <div class="px-md-3"><!--"py-5 px-3 ">-->
+            <div class="py-4 px-3 ">
+                <div class="page-title pb-5 pt-3 mb-1">Incomes and expenses</div>
+                <div class="button d-flex align-items-center mt-4 mb-5">
+                    <button class="btn btn-success me-3 d-flex align-items-center px-4 " id="buttonAddIncome">Create income
+                    </button>
+                    <button class="btn btn-danger d-flex align-items-center px-4" id="buttonAddExpense">Create expense
+                    </button>
+                </div>
+                <div class="button myButtonBlock d-flex align-items-center justify-content-space-between mt-4 mb-1">
+                    <div class="btn bt-date border-1 border-dark-subtle  me-4 mb-2 d-flex justify-content-center align-items-center"
+                         id="buttonNow">
+                        Now
+                    </div>
+                    <!--a href="#"-->
+                    <div class="btn bt-date border-1 border-dark-subtle  me-4  mb-2 border-dark d-flex  justify-content-center align-items-center"
+                         id="buttonWeek">
+                        Week
+                    </div>
+                    <div class="btn bt-date border-1 border-dark-subtle  me-4 mb-2 d-flex  justify-content-center align-items-center"
+                         id="buttonMonth">
+                        Month
+                    </div>
+                    <div class="btn bt-date border-1 border-dark-subtle  me-4 mb-2 d-flex  justify-content-center align-items-center"
+                         id="buttonYear">
+                        Year
+                    </div>
+                    <div class="btn bt-date border-1 border-dark-subtle  me-4 mb-2 d-flex  justify-content-center align-items-center"
+                         id="buttonAll">
+                        All
+                    </div>
+                    <div class="btn bt-date border-1 border-dark-subtle  me-4 mb-2 d-flex  justify-content-center align-items-center"
+                         id="buttonInterval">
+                        Interval
+                    </div>
+                    <div class="  me-4 d-flex  justify-content-center align-items-center">
+                        <label for="start" class="fw-bold ">from</label>
+                        <input type="date" class="btn text-decoration-underline" id="start" placeholder='Date'
+                               name="trip-start" value="2022-07-11"/>
+                    </div>
+                    <div class="  me-4  d-flex  justify-content-center align-items-center">
+                        <label for="end" class="fw-bold">to</label>
+                        <input type="date" id="end" class="btn text-decoration-underline" name="trip-end"
+                               value="2024-07-22"/>
+                    </div>
+                </div>
+                <div class="my-table wrapper table-responsive mt-5  my-3 py-3 w-100">
+                    <table class="table table-hover ">
+                        <thead class="py-3">
+                        <tr class="tbl-line border-top text-center  align-middle">
+                            <th scope="col">N ope ration</th>
+                            <th scope="col">Type</th>
+                            <th scope="col-2">Category</th>
+                            <th scope="col-2">Sum</th>
+                            <th scope="col-1">Date</th>
+                            <th scope="col-3">Comment</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody id="tableOperations">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered p-4">
+            <div class="modal-content d-flex align-items-center p-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title mb-4" id="staticBackdropLabel">Do you really want to remove the operation?</h5>
+                </div>
+                <div class="modal-footer border-0 d-flex align-items-center">
+                    <button type="button" class="btn btn-success me-3 d-flex align-items-center px-4"
+                            data-bs-dismiss="modal" id="delete">Yes, delete it.
+                    </button>
+                    <button type="button" class="btn btn-danger d-flex align-items-center px-4" data-bs-dismiss="modal">
+                       Don't delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
